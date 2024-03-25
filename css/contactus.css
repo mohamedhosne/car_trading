@@ -1,0 +1,158 @@
+/* Styles for body */
+nav {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px; /* تعديل الهوامش الداخلية للعنصر nav */
+    background-color: #33333300; /* لون خلفية الناف */
+    color: #fff; /* لون النص */
+}
+
+nav .logo {
+    width: 200px; /* تعديل عرض الشعار */
+    height: auto; /* تعديل ارتفاع الشعار */
+}
+header nav{
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+nav .menu a{
+    color: #fff;
+    margin-left: 40px;
+    position: relative;
+}
+nav .menu a {
+    color: #fff; /* لون النص للروابط */
+    text-decoration: none; /* إزالة تأثير التحتيط للروابط */
+    margin: 0 10px; /* تعديل هوامش الروابط */
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
+/* Styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Styles for h1 */
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+p {
+    color: #ffffff;
+    text-align: center; /* لوضع الروابط في المنتصف */
+
+}
+/* Styles for form */
+form {
+    width: 50%;
+    margin: 0 auto;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: #fff;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fffcfc;
+    border-radius: 7px;   
+    color: #000000; /* لون النص داخل خانة الإدخال */
+    background-color: #ffffffb8; /* لون خلفية خانة الإدخال */
+
+
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #fffcfc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+h2 {
+    color: #ffffff;
+    text-align: center; /* لوضع الروابط في المنتصف */
+
+}
+/* Styles for Social Media Links */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* لوضع الروابط في المنتصف */
+
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: inline-block; /* لجعل العناصر جنبًا إلى جنب */
+    margin-right: 40px; /* تحديد مسافة بين العناصر */
+}
+ul li:last-child {
+    margin-right: 0; /* لإزالة المسافة من العنصر الأخير */
+}
+
+ul li a {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 40px; /* ضبط ارتفاع السطر */
+}
+
+ul li a:hover {
+    transform: scale(1.3);
+    color: #dd0707;}

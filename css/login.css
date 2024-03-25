@@ -1,0 +1,138 @@
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    backdrop-filter: blur(2px);
+}
+.login {
+    margin: 210px auto 50px;
+    padding: 25px;
+    width: 350px;
+    border: 1px solid #ccc;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+nav ul li :hover {
+    /* background-color: rgba(255, 255, 255, 0.84); */
+    color: #ff0000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+input[type="submit"] {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+
+#password-error {
+    display: block;
+    margin-top: 8px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed; /* تحديد الوضع ليكون ثابتًا */
+    top: 50; 
+    margin:-250;/* الانزياح من الأعلى */
+    left: 0;
+    right: 250;
+    height: 80px; /* يمكنك ضبط الارتفاع حسب الحاجة */
+    background-color: rgba(0, 0, 0, 0); /* لون خلفية الهيدر */
+    z-index: 1000; /* لتأكيد عرض الهيدر فوق العناصر الأخرى */
+    transition: top 0.3s ease; /* تطبيق تحول ناعم عند التحرك */
+}
+
+header nav{
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu a{
+    color: #fff;
+    margin-left: 40px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
